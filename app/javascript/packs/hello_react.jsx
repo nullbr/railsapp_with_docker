@@ -11,7 +11,7 @@ const Hello = props => (
 )
 
 Hello.defaultProps = {
-  name: 'World'
+  name: 'David'
 }
 
 Hello.propTypes = {
@@ -20,7 +20,7 @@ Hello.propTypes = {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Hello name="Bruno" />,
     document.body.appendChild(document.createElement('div')),
   )
 })

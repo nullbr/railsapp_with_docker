@@ -31,7 +31,14 @@ gem 'jbuilder'
 gem 'redis', '~> 4.0'
 
 # Use webpaker to serve our app with a javascript front end
-gem 'webpacker', '~> 3.5'
+gem 'webpacker', '~> 5.4.3'
+
+# https://stackoverflow.com/questions/67773514/getting-warning-already-initialized-constant-on-assets-precompile-at-the-time
+gem 'net-http'
+
+# To use sass with sprockets you’ll need the sass-rails gem
+# https://stackoverflow.com/questions/65514604/rails-5-loaderror-cannot-load-such-file-sass-when-deploying-to-heroku
+# gem 'sass-rails'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
