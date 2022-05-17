@@ -34,6 +34,7 @@ WORKDIR /usr/src/app
 
 # Install gems necessary for rails app
 RUN bundle install
+RUN rails db:migrate
 
 # Copy all other files from current folder to the container
 COPY . /usr/src/app 
